@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Logo Share – 라이선스 없는 무료 로고 나눔</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#eef1f6;--surface:#fff;--ink:#101828;--mute:#5b6477;--line:#d9dfea;--acc:#2f5bff;--acc-ink:#fff;--tile:#f6f8fc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1220;--surface:#171c2e;--ink:#eef1fa;--mute:#98a2bb;--line:#2a3150;--acc:#7b97ff;--acc-ink:#0e1220;--tile:#1d2338}}
+:root[data-theme="dark"]{--bg:#0e1220;--surface:#171c2e;--ink:#eef1fa;--mute:#98a2bb;--line:#2a3150;--acc:#7b97ff;--acc-ink:#0e1220;--tile:#1d2338}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.brand i{width:22px;height:22px;border-radius:50% 50% 50% 4px;background:var(--acc);display:inline-block}
+button,.btn{font:inherit;cursor:pointer}
+.btn{background:var(--acc);color:var(--acc-ink);border:0;border-radius:10px;padding:10px 18px;font-weight:700}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+button:focus-visible,input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.hero{padding:36px 0 28px;display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+h1{font-family:"Bricolage Grotesque","Noto Sans KR",sans-serif;font-weight:800;font-size:clamp(40px,7vw,76px);line-height:1.02;letter-spacing:-.035em;margin:0 0 18px}
+.hero p{font-size:18px;color:var(--mute);max-width:46ch;margin:0 0 22px}
+.mosaic{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.mosaic div{background:var(--surface);border:1px solid var(--line);border-radius:14px;aspect-ratio:1;padding:12px}
+.mosaic div:nth-child(3n+2){transform:translateY(14px)}
+.mosaic svg,.card svg{width:100%;height:100%;display:block}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:26px 0 18px}
+.tools input{flex:1 1 220px;min-width:0;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:11px 14px;font:inherit}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:0;overflow:hidden;text-align:left;color:var(--ink)}
+.card .art{background:var(--tile);padding:26px;aspect-ratio:1.2}
+.card .meta{padding:12px 16px 14px}
+.card b{display:block}
+.card span{color:var(--mute);font-size:14px}
+.empty{padding:50px 0;text-align:center;color:var(--mute)}
+.rules{margin:56px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.rules div{border-top:3px solid var(--acc);padding-top:12px}
+.rules h3{margin:0 0 6px;font-size:18px}
+.rules p{margin:0;color:var(--mute)}
+footer{margin:56px 0 28px;color:var(--mute);font-size:14px;border-top:1px solid var(--line);padding-top:18px}
+dialog{border:0;border-radius:20px;padding:0;background:var(--surface);color:var(--ink);width:min(520px,calc(100% - 28px));max-height:calc(100% - 28px)}
+dialog::backdrop{background:rgba(8,12,24,.6)}
+.dlg{padding:22px}
+.big{background:var(--tile);border-radius:14px;padding:30px;margin-bottom:14px}
+.big svg{width:100%;max-height:240px;display:block}
+.sw{display:flex;gap:8px;margin:0 0 14px}
+.sw button{width:30px;height:30px;border-radius:50%;border:2px solid var(--line)}
+.sw button[aria-pressed="true"]{outline:3px solid var(--ink);outline-offset:2px}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.note{font-size:13px;color:var(--mute);margin:12px 0 0}
+label.f{display:block;margin:0 0 12px;font-weight:500}
+label.f input{display:block;width:100%;margin-top:6px;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:10px}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.rules{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand"><i></i>Logo Share</div>
+  <button class="btn" id="upBtn">로고 올리기</button>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>마음에 드는 로고,<br>무료로 나눠요.</h1>
+    <p>Logo Share의 모든 로고는 라이선스 없이 무료입니다. 가입도, 출처 표기도 필요 없어요. 마음에 드는 로고를 골라 색을 바꾸고 SVG 코드를 복사해 가세요.</p>
+    <a class="btn" href="#gallery" style="text-decoration:none;display:inline-block">로고 둘러보기</a>
+  </div>
+  <div class="mosaic" id="mosaic" aria-hidden="true"></div>
+</section>
+
+<section id="gallery">
+  <div class="tools">
+    <input id="q" type="search" placeholder="로고 이름이나 태그로 검색" aria-label="로고 검색">
+  </div>
+  <div class="chips" id="chips" role="group" aria-label="분류"></div>
+  <div style="height:16px"></div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>맞는 로고가 없어요. 다른 검색어를 써 보세요.</div>
+</section>
+
+<section class="rules">
+  <div><h3>라이선스 없음</h3><p>개인·상업 프로젝트 모두 자유롭게 쓸 수 있어요. 허락을 구하지 않아도 됩니다.</p></div>
+  <div><h3>출처 표기 불필요</h3><p>쓰는 곳에 Logo Share를 적지 않아도 괜찮아요.</p></div>
+  <div><h3>SVG로 제공</h3><p>어떤 크기로 키워도 선명하고, 색도 마음대로 바꿀 수 있어요.</p></div>
+</section>
+
+<footer>Logo Share · 누구나 쓰고, 누구나 나누는 로고 공유센터</footer>
+</div>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <div class="dlg">
+    <div class="big" id="big"></div>
+    <h2 id="dt" style="margin:0 0 4px;font-size:20px"></h2>
+    <p id="dm" style="margin:0 0 14px;color:var(--mute)"></p>
+    <div class="sw" id="sw" role="group" aria-label="색상 선택"></div>
+    <div class="row">
+      <button class="btn" id="copy">SVG 코드 복사</button>
+      <button class="btn ghost" id="close1">닫기</button>
+    </div>
+    <p class="note" id="cn">복사한 코드는 .svg 파일로 저장하거나 웹 페이지에 바로 붙여 넣을 수 있어요.</p>
+  </div>
+</dialog>
+
+<dialog id="udlg" aria-labelledby="ut">
+  <div class="dlg">
+    <h2 id="ut" style="margin:0 0 14px;font-size:20px">로고 올리기</h2>
+    <label class="f">로고 이름<input id="un" maxlength="20" placeholder="예: 우리동네 빵집"></label>
+    <label class="f">이미지 파일 (SVG, PNG, JPG)<input id="uf" type="file" accept="image/svg+xml,image/png,image/jpeg"></label>
+    <p class="note" style="margin:0 0 14px">올리는 로고는 누구나 자유롭게 쓸 수 있는 무료 로고로 공유됩니다. 직접 만들었거나 사용 권리가 있는 로고만 올려 주세요. 올린 로고는 이 사이트를 여는 모든 사람에게 보여요.</p>
+    <p class="note" id="ust" style="margin:0 0 14px;color:var(--acc)"></p>
+    <div class="row">
+      <button class="btn" id="usave">올리기</button>
+      <button class="btn ghost" id="close2">취소</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+var PAL=[["#2f5bff","#ffb020"],["#e5484d","#1f2a44"],["#12a594","#f5d90a"],["#8e4ec6","#ff8ba7"],["#111827","#f97316"]];
+var LOGOS=[
+{n:"오비트",c:"심볼",t:"원 궤도 행성",f:function(a,b){return '<circle cx="50" cy="50" r="30" fill="none" stroke="'+a+'" stroke-width="8"/><circle cx="76" cy="30" r="10" fill="'+b+'"/>'}},
+{n:"헥사",c:"도형",t:"육각형 벌집",f:function(a,b){return '<polygon points="50,10 84,30 84,70 50,90 16,70 16,30" fill="'+a+'"/><polygon points="50,28 68,38 68,62 50,72 32,62 32,38" fill="'+b+'"/>'}},
+{n:"새싹잎",c:"자연",t:"잎 친환경 식물",f:function(a,b){return '<path d="M20 80 C20 40 45 18 82 18 C82 58 58 82 20 80Z" fill="'+a+'"/><path d="M24 76 C40 56 52 44 70 30" stroke="'+b+'" stroke-width="6" fill="none" stroke-linecap="round"/>'}},
+{n:"번개",c:"테크",t:"에너지 전기 빠름",f:function(a,b){return '<circle cx="50" cy="50" r="40" fill="'+b+'"/><polygon points="56,14 28,54 47,54 41,86 72,44 52,44" fill="'+a+'"/>'}},
+{n:"물결",c:"자연",t:"바다 파도 물",f:function(a,b){return '<path d="M10 40 Q27 20 45 40 T80 40 T100 40" transform="translate(-5 0)" stroke="'+a+'" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M10 66 Q27 46 45 66 T80 66 T100 66" transform="translate(-5 0)" stroke="'+b+'" stroke-width="9" fill="none" stroke-linecap="round"/>'}},
+{n:"피크",c:"자연",t:"산 등산 여행",f:function(a,b){return '<polygon points="8,84 40,26 62,64 72,48 92,84" fill="'+a+'"/><circle cx="74" cy="24" r="9" fill="'+b+'"/>'}},
+{n:"말풍선",c:"심볼",t:"채팅 대화 메시지",f:function(a,b){return '<path d="M16 22 H84 Q90 22 90 28 V64 Q90 70 84 70 H48 L28 88 V70 H16 Q10 70 10 64 V28 Q10 22 16 22Z" fill="'+a+'"/><circle cx="32" cy="46" r="6" fill="'+b+'"/><circle cx="50" cy="46" r="6" fill="'+b+'"/><circle cx="68" cy="46" r="6" fill="'+b+'"/>'}},
+{n:"스타",c:"심볼",t:"별 즐겨찾기",f:function(a,b){return '<polygon points="50,8 61,38 92,38 67,57 76,88 50,69 24,88 33,57 8,38 39,38" fill="'+a+'"/><circle cx="50" cy="50" r="10" fill="'+b+'"/>'}},
+{n:"큐브",c:"도형",t:"상자 3D 입체",f:function(a,b){return '<polygon points="50,10 88,30 50,50 12,30" fill="'+b+'"/><polygon points="12,30 50,50 50,92 12,70" fill="'+a+'"/><polygon points="88,30 50,50 50,92 88,70" fill="'+a+'" opacity=".65"/>'}},
+{n:"선라이즈",c:"자연",t:"해 태양 아침",f:function(a,b){return '<path d="M16 66 A34 34 0 0 1 84 66Z" fill="'+b+'"/><rect x="8" y="72" width="84" height="8" rx="4" fill="'+a+'"/><rect x="26" y="86" width="48" height="6" rx="3" fill="'+a+'" opacity=".55"/>'}},
+{n:"드롭",c:"자연",t:"물방울 액체",f:function(a,b){return '<path d="M50 8 C72 36 84 50 84 64 A34 34 0 0 1 16 64 C16 50 28 36 50 8Z" fill="'+a+'"/><ellipse cx="38" cy="62" rx="6" ry="12" fill="'+b+'" transform="rotate(20 38 62)"/>'}},
+{n:"하트",c:"심볼",t:"사랑 좋아요 건강",f:function(a,b){return '<path d="M50 86 C10 58 6 30 28 22 C40 18 48 26 50 32 C52 26 60 18 72 22 C94 30 90 58 50 86Z" fill="'+a+'"/><circle cx="30" cy="34" r="6" fill="'+b+'"/>'}},
+{n:"실드",c:"테크",t:"방패 보안 안전",f:function(a,b){return '<path d="M50 8 L86 22 V50 C86 70 70 82 50 92 C30 82 14 70 14 50 V22Z" fill="'+a+'"/><path d="M34 50 L46 62 L68 38" stroke="'+b+'" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'}},
+{n:"링크 링",c:"도형",t:"겹친 원 연결",f:function(a,b){return '<circle cx="36" cy="50" r="26" fill="'+a+'" opacity=".9"/><circle cx="64" cy="50" r="26" fill="'+b+'" opacity=".85"/>'}},
+{n:"픽셀",c:"테크",t:"격자 블록 앱",f:function(a,b){return '<rect x="12" y="12" width="34" height="34" rx="6" fill="'+a+'"/><rect x="54" y="12" width="34" height="34" rx="6" fill="'+b+'"/><rect x="12" y="54" width="34" height="34" rx="6" fill="'+b+'"/><rect x="54" y="54" width="34" height="34" rx="17" fill="'+a+'"/>'}},
+{n:"업애로우",c:"심볼",t:"화살표 성장 상승",f:function(a,b){return '<rect x="8" y="8" width="84" height="84" rx="22" fill="'+a+'"/><path d="M30 70 L70 30 M42 30 H70 V58" stroke="'+b+'" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'}},
+{n:"Aa 워드",c:"텍스트",t:"글자 타이포 워드마크",f:function(a,b){return '<rect x="8" y="14" width="84" height="72" rx="16" fill="'+a+'"/><text x="50" y="66" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="44" fill="'+b+'">Aa</text>'}},
+{n:"모노그램 L",c:"텍스트",t:"이니셜 알파벳 글자",f:function(a,b){return '<circle cx="50" cy="50" r="40" fill="'+a+'"/><path d="M38 28 V68 H66" stroke="'+b+'" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>'}},
+{n:"브레이스",c:"텍스트",t:"코드 개발자 중괄호",f:function(a,b){return '<rect x="8" y="14" width="84" height="72" rx="14" fill="'+b+'"/><text x="50" y="64" text-anchor="middle" font-family="monospace" font-weight="700" font-size="38" fill="'+a+'">{ }</text>'}},
+{n:"삼각 플레이",c:"도형",t:"재생 영상 미디어",f:function(a,b){return '<circle cx="50" cy="50" r="40" fill="'+b+'"/><polygon points="40,30 72,50 40,70" fill="'+a+'"/>'}},
+{n:"클로버",c:"자연",t:"네잎 행운",f:function(a,b){return '<circle cx="36" cy="36" r="18" fill="'+a+'"/><circle cx="64" cy="36" r="18" fill="'+a+'"/><circle cx="36" cy="64" r="18" fill="'+a+'"/><circle cx="64" cy="64" r="18" fill="'+a+'"/><circle cx="50" cy="50" r="8" fill="'+b+'"/>'}},
+{n:"커피",c:"심볼",t:"카페 음료 컵",f:function(a,b){return '<path d="M16 34 H70 V58 A22 22 0 0 1 48 80 H38 A22 22 0 0 1 16 58Z" fill="'+a+'"/><path d="M70 40 H78 A10 10 0 0 1 78 62 H68" stroke="'+a+'" stroke-width="7" fill="none"/><path d="M30 24 Q34 16 30 10 M46 24 Q50 16 46 10" stroke="'+b+'" stroke-width="5" fill="none" stroke-linecap="round"/>'}},
+{n:"집",c:"심볼",t:"홈 부동산 주거",f:function(a,b){return '<polygon points="50,10 92,46 82,46 82,88 18,88 18,46 8,46" fill="'+a+'"/><rect x="40" y="58" width="20" height="30" rx="4" fill="'+b+'"/>'}},
+{n:"와이파이",c:"테크",t:"신호 네트워크 연결",f:function(a,b){return '<path d="M12 40 Q50 4 88 40" stroke="'+a+'" stroke-width="9" fill="none" stroke-linecap="round"/><path d="M26 56 Q50 34 74 56" stroke="'+a+'" stroke-width="9" fill="none" stroke-linecap="round"/><circle cx="50" cy="76" r="9" fill="'+b+'"/>'}}
+];
+var cats=["전체","심볼","도형","자연","테크","텍스트"],cur="전체",curLogo=null,curPal=0,extra=[];
+function svgOf(l,p){var pl=PAL[p||0];return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="'+l.n+' 로고">'+l.f(pl[0],pl[1])+'</svg>'}
+function all(){return extra.concat(LOGOS)}
+function renderMosaic(){var h="";for(var i=0;i<8;i++){h+='<div>'+svgOf(LOGOS[(i*3)%LOGOS.length],i%PAL.length)+'</div>'}document.getElementById("mosaic").innerHTML=h}
+function renderChips(){var el=document.getElementById("chips");el.innerHTML="";cats.forEach(function(c){var b=document.createElement("button");b.className="chip";b.textContent=c;b.setAttribute("aria-pressed",c===cur);b.onclick=function(){cur=c;renderChips();renderGrid()};el.appendChild(b)})}
+function renderGrid(){
+  var q=document.getElementById("q").value.trim().toLowerCase(),g=document.getElementById("grid");g.innerHTML="";var n=0;
+  all().forEach(function(l,i){
+    if(cur!=="전체"&&l.c!==cur)return;
+    if(q&&(l.n+" "+l.t+" "+l.c).toLowerCase().indexOf(q)<0)return;
+    n++;var b=document.createElement("button");b.className="card";
+    b.innerHTML='<div class="art">'+(l.img?'<img src="'+l.img+'" alt="'+l.n+'" style="width:100%;height:100%;object-fit:contain">':svgOf(l,i%PAL.length))+'</div><div class="meta"><b></b><span>'+l.c+' · 무료</span></div>';
+    b.querySelector("b").textContent=l.n;
+    b.onclick=function(){openLogo(l,i%PAL.length)};g.appendChild(b)});
+  document.getElementById("empty").hidden=n>0}
+function openLogo(l,p){
+  curLogo=l;curPal=p;var big=document.getElementById("big");
+  big.innerHTML=l.img?'<img src="'+l.img+'" alt="'+l.n+'" style="width:100%;max-height:240px;object-fit:contain;display:block">':svgOf(l,p);
+  document.getElementById("dt").textContent=l.n;
+  document.getElementById("dm").textContent=l.c+" · 라이선스 없음 · 출처 표기 불필요";
+  var sw=document.getElementById("sw");sw.innerHTML="";
+  if(!l.img){PAL.forEach(function(pl,i){var b=document.createElement("button");b.style.background="linear-gradient(135deg,"+pl[0]+" 50%,"+pl[1]+" 50%)";b.setAttribute("aria-label","색상 "+(i+1));b.setAttribute("aria-pressed",i===curPal);b.onclick=function(){openLogo(l,i)};sw.appendChild(b)})}
+  document.getElementById("copy").style.display=l.img?"none":"";
+  document.getElementById("cn").textContent=l.img?"이 로고는 이미지 파일이라 길게 눌러(우클릭) 저장할 수 있어요.":"복사한 코드는 .svg 파일로 저장하거나 웹 페이지에 바로 붙여 넣을 수 있어요.";
+  var d=document.getElementById("dlg");if(!d.open)d.showModal()}
+document.getElementById("copy").onclick=function(){
+  var code=svgOf(curLogo,curPal),n=document.getElementById("cn");
+  function ok(){n.textContent="SVG 코드를 복사했어요."}
+  function fail(){n.textContent="복사하지 못했어요. 로고를 길게 눌러 선택해 보세요."}
+  try{navigator.clipboard.writeText(code).then(ok,fail)}catch(e){fail()}};
+document.getElementById("close1").onclick=function(){document.getElementById("dlg").close()};
+document.getElementById("q").oninput=renderGrid;
+document.getElementById("upBtn").onclick=function(){document.getElementById("udlg").showModal()};
+document.getElementById("close2").onclick=function(){document.getElementById("udlg").close()};
+document.getElementById("usave").onclick=function(){
+  var f=document.getElementById("uf").files[0],nm=document.getElementById("un").value.trim();
+  if(!nm||!f){alert("로고 이름과 이미지 파일을 모두 넣어 주세요.");return}
+  var r=new FileReader();r.onload=function(){extra.unshift({n:nm,c:"심볼",t:nm,img:r.result});document.getElementById("udlg").close();document.getElementById("un").value="";document.getElementById("uf").value="";cur="전체";renderChips();renderGrid();document.getElementById("gallery").scrollIntoView()};
+  r.readAsDataURL(f)};
+renderMosaic();renderChips();renderGrid();
+var DB=null,OWNER=false,CANW=null,OKIMG=/^data:image\/(png|jpeg|svg\+xml|webp);base64,[A-Za-z0-9+\/=]+$/;
+function st(t){document.getElementById("ust").textContent=t}
+function shrink(f){return new Promise(function(res,rej){
+ var r=new FileReader();r.onerror=function(){rej("파일을 읽지 못했어요.")};
+ if(f.type==="image/svg+xml"){if(f.size>150000){rej("SVG 파일이 너무 커요. 150KB 이하로 올려 주세요.");return}r.onload=function(){res(r.result)};r.readAsDataURL(f);return}
+ r.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,400/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.max(1,Math.round(im.width*s));c.height=Math.max(1,Math.round(im.height*s));c.getContext("2d").drawImage(im,0,0,c.width,c.height);var d=c.toDataURL("image/png");if(d.length>200000)d=c.toDataURL("image/jpeg",.85);res(d)};im.onerror=function(){rej("이미지를 열지 못했어요.")};im.src=r.result};
+ r.readAsDataURL(f)})}
+document.getElementById("upBtn").onclick=function(){st("");document.getElementById("udlg").showModal();if(!DB)st("공유 저장소에 연결하는 중이에요. 로그인한 상태가 아니라면 올릴 수 없어요.");else if(CANW===false)st("지금 계정은 로고를 올릴 권한이 없어요. 페이지 소유자에게 참여 권한을 요청해 주세요.")};
+document.getElementById("usave").onclick=async function(){
+ var f=document.getElementById("uf").files[0],nm=document.getElementById("un").value.trim().replace(/[<>"'&]/g,"");
+ if(!nm||!f){st("로고 이름과 이미지 파일을 모두 넣어 주세요.");return}
+ if(!DB){st("공유 저장소에 연결되지 않았어요. 로그인한 상태에서 다시 열어 주세요.");return}
+ try{st("올리는 중…");var img=await shrink(f);var id="l"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+  await DB.doc("logos/"+id).set({n:nm,img:img,t:Date.now()});
+  document.getElementById("udlg").close();document.getElementById("un").value="";document.getElementById("uf").value="";st("");cur="전체";renderChips();renderGrid();document.getElementById("gallery").scrollIntoView()
+ }catch(e){st(typeof e==="string"?e:"올리지 못했어요. 이 페이지에 글을 쓸 수 있는 권한이 필요해요.")}};
+var _ol=openLogo;openLogo=function(l,p){_ol(l,p);var row=document.querySelector("#dlg .row"),o=document.getElementById("delb");if(o)o.remove();if(OWNER&&l.id){var b=document.createElement("button");b.id="delb";b.className="btn ghost";b.textContent="삭제";b.onclick=async function(){try{await DB.doc("logos/"+l.id).delete();document.getElementById("dlg").close()}catch(e){}};row.appendChild(b)}};
+(async function(){try{
+ var u=await claude.use("user");OWNER=!!(u&&u.isOwner());
+ if(u&&u.can){CANW=await u.can("data.write")}
+ DB=await claude.use("db");if(!DB)return;
+ DB.collection("logos").onSnapshot(function(s){var a=[];s.docs.forEach(function(d){var v=d.data();if(v&&typeof v.img==="string"&&OKIMG.test(v.img)){var n=String(v.n||"무제").replace(/[<>"'&]/g,"").slice(0,20);a.push({n:n,c:"심볼",t:n,img:v.img,id:d.id,ts:Number(v.t)||0})}});a.sort(function(x,y){return y.ts-x.ts});extra=a;renderGrid()},function(){});
+}catch(e){}})();
+</script>
+</body>
+</html>
